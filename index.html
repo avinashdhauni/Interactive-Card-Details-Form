@@ -22,13 +22,13 @@
       <div class="frontCard">
         <img src="images/bg-card-front.png" alt="" srcset="">
         <img src="images/card-logo.svg" class="cardLogo" alt="Card Logo">
-        <p class="cardNumber">0000 0000 0000 0000</p>
-        <p class="cardName">Jane Appleseed</p>
-        <p class="cardExpiry">00/00</p>
+        <p class="cardNumber" id="cardNumber">0000 0000 0000 0000</p>
+        <p class="cardName" id="cardName">Jane Appleseed</p>
+        <p class="cardExpiry" id="cardExpiry">00/00</p>
       </div>
       <div class="backCard">
         <img src="images/bg-card-back.png" alt="">
-          <p class="cardCVV">000</p>
+          <p class="cardCVV" id="cardCVV">000</p>
       </div>
     </div>
     <div class="secondColumn">
@@ -41,24 +41,24 @@
         </div>
        <div class="row">
           <div class="col">
-            <label for="cardNumber">Cardholder Name</label>
-          <input type="number" name="name" class="form-control" id="cardNumber" placeholder="e.g. 1234 5687 9123 0000">
+            <label for="cardNumberInput">Cardholder Number</label>
+          <input type="number" name="name" class="form-control" id="cardNumberInput" placeholder="e.g. 1234 5687 9123 0000" onKeyPress="if(this.value.length==16) return false;">
           </div>
        </div>
         <div class="dateAndCvv">
           <div class="row" style="margin-right:30px;">
             <label for="month">Exp. Date (mm/yy)</label>
             <div class="col">
-              <input type="number" id="month" class="form-control" placeholder="MM">
+              <input type="number" id="month" class="form-control" placeholder="MM" onKeyPress="if(this.value.length==2) return false;">
             </div>
             <div class="col">
-              <input type="number" id="year" class="form-control" placeholder="YY">
+              <input type="number" id="year" class="form-control" placeholder="YY" onKeyPress="if(this.value.length == 2) return false">
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label for="cvcInput">cvc</label>
-            <input type="number" id="cvcInput" class="form-control" placeholder="e.g. 123">
+            <input type="number" id="cvcInput" class="form-control" placeholder="e.g. 123" onKeyPress="if(this.value.length==3) return false">
             </div>
           </div>
         </div>

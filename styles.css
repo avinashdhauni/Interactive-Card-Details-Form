@@ -17,9 +17,14 @@ body{
     align-items: stretch;
 }
 .firstColumn{
-    flex:0 1 25%;
+    width:35%;
     position:relative;
     background-image: url('images/bg-main-desktop.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: visible!important;
+    z-index: 99;
 }
 .secondColumn{
     background-color: #fff;
@@ -28,10 +33,18 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width:75%;
+    width:65%;
 }
 .frontCard, .backCard{
-    position: relative;
+    position: absolute;
+}
+.frontCard{
+    top:13%;
+    left:30%;
+}
+.backCard{
+    bottom:9%;
+    left:52%;
 }
 /**********First Column Front card and back card*************/
 .cardLogo, .cardNumber, .cardName, .cardExpiry, .cardCVV{
@@ -50,6 +63,7 @@ body{
     color:#fff;
     letter-spacing: 4px;
     font-size:27px;
+    float:right;
 }
 .cardName{
     bottom:10px;
@@ -74,6 +88,7 @@ body{
 /************second column form******************/
 form{
     width:43%;
+    margin-left: 150px;
 }
 label{
     text-transform: uppercase;
