@@ -52,35 +52,37 @@ body{
         margin-left: 0!important;
     }
     .frontCard{
-        width:80%!important;
+        width:85%!important;
         left:5%!important;
         margin-bottom:-70px!important;
         z-index: 2;
     }
     .backCard{
-        margin-bottom:-90px!important;
-        width:80%!important;
-        right:-10%!important;
+        margin-bottom:-80px!important;
+        width:85%!important;
+        right:-11%!important;
         top: 0!important;
     }
     .cardNumber{
-        font-size: 18px!important;
+        font-size: 17px!important;
         bottom: 45px!important;
         left:20px!important;
     }
     .cardLogo{
-        top:20px!important;
-        left:20px!important;
+        top:15px!important;
+        left:15px!important;
     }
     .cardName{
-        bottom:20px!important;
-        left: 20px !important;
+        bottom:15px!important;
+        left: 15px !important;
         margin-bottom: 0!important;
+        font-size:13px!important;
     }
     .cardExpiry{
-        bottom: 20px !important;
-        right: 20px !important;
+        bottom: 15px !important;
+        right: 15px !important;
         margin-bottom: 0!important;
+        font-size:13px!important
     }
     label{
         font-size: 10px!important;
@@ -168,7 +170,7 @@ body{
     letter-spacing: 1px;
 }
 .cardCVV{
-    top:45%;
+    top:44%;
     right:15%;
     font-size:15px;
     letter-spacing: 1px;
