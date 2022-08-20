@@ -80,9 +80,12 @@ function validate(event){
     ){ 
         cardDetailsForm.classList.add("hide");
         thankYouForm.classList.remove("hide");
-        cardForm.addEventListener("submit", (event) => {
-            event.preventDefault();
-        })
+        cardHolderName.value === "";
+        cardNumberInput.value === "";
+        monthInput.value === "";
+        yearInput.value === "";
+        cvcInput.value === "";
+
     }else{
         if(cardHolderName.value === ""){
             nameError.innerHTML = "Can't be blank";

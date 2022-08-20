@@ -82,6 +82,21 @@ body{
         right: 20px !important;
         margin-bottom: 0!important;
     }
+    label{
+        font-size: 10px!important;
+        letter-spacing: 1px!important;
+    }
+    .cardDetailsForm .row .col .form-control{
+        padding:7px!important;
+        border-radius: 5px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 15px!important;
+    }
+    .thankYou{
+        width: 100%!important;
+        margin-left:0!important;
+        margin-top:100px;
+    }
 }
 
 .firstColumn{
@@ -177,11 +192,14 @@ label{
 }   
 .dateAndCvv{
     display: flex;
-    flex-direction: row;;
+    flex-direction: row;
 }
 .row{
     flex:1;
     margin-top:30px!important;
+}
+.col{
+    padding:0 5px!important;
 }
 .cardDetailsForm .row .col .form-control{
     padding:7px;
