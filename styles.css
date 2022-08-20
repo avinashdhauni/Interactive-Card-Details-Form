@@ -16,13 +16,59 @@ body{
     flex-direction: row;
     align-items: stretch;
 }
+@media only screen and (max-width:960px){
+    body{
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .container{
+        width: 100vw !important;
+        height:auto!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .firstColumn{
+        width:100vw!important;
+        height:auto!important;
+        background-size: cover!important;
+        display: flex!important;
+        flex-direction: column-reverse!important;
+        flex-wrap: wrap!important;
+    }
+    .secondColumn{
+        width: 100%!important;
+        padding: 30px !important;
+    }
+    .cardDetailsForm{
+        width: 100%!important;
+        margin-top: 100px!important;
+        margin-left: 0!important;
+    }
+  
+    .frontCard{
+        width:90%!important;
+        left:0%!important;
+        top: 0!important;
+    }
+    .backCard{
+        width:80%!important;
+        left:0%!important;
+        top: 0!important;
+    }
+}
+
 .firstColumn{
     width:35%;
     position:relative;
     background-image: url('images/bg-main-desktop.png');
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap!important;
     overflow: visible!important;
     z-index: 99;
 }
@@ -30,21 +76,25 @@ body{
     background-color: #fff;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width:65%;
 }
 .frontCard, .backCard{
-    position: absolute;
+    position:relative;
+    margin:20px 0;
 }
 .frontCard{
-    top:13%;
     left:30%;
 }
 .backCard{
-    bottom:9%;
     left:52%;
+}
+.img-fluid{
+    max-width: 100%!important;
+    height:auto!important;
+    object-fit: cover;
 }
 /**********First Column Front card and back card*************/
 .cardLogo, .cardNumber, .cardName, .cardExpiry, .cardCVV{
@@ -63,7 +113,7 @@ body{
     color:#fff;
     letter-spacing: 4px;
     font-size:27px;
-    float:right;
+    text-transform: uppercase;
 }
 .cardName{
     bottom:10px;
@@ -80,16 +130,17 @@ body{
 }
 .cardCVV{
     top:109px;
-    right:55px;
+    right:65px;
     font-size:15px;
     letter-spacing: 1px;
 }
 
 /************second column form******************/
-form{
+.cardDetailsForm{
     width:43%;
     margin-left: 150px;
 }
+
 label{
     text-transform: uppercase;
     font-family: 'Space Grotesk', sans-serif;
@@ -108,7 +159,7 @@ label{
     flex:1;
     margin-top:30px!important;
 }
-form .row .col .form-control{
+.cardDetailsForm .row .col .form-control{
     padding:7px;
     border-radius: 7px;
     font-family: 'Space Grotesk', sans-serif;
@@ -126,4 +177,40 @@ form .row .col .form-control{
     font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
     margin-top:30px;
+}
+
+/********Error in Form**************/
+.cardDetailsForm p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size:15px;
+    color:hsl(0, 100%, 66%);
+    margin-top:5px;
+}
+
+/**********Thank You****************/
+h3{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size:25px;
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top:30px!important;
+}
+.thankYou p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:hsl(279, 6%, 55%);
+}
+.thankYou{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.hide{
+    display:none;
 }
