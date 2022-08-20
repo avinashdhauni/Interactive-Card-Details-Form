@@ -24,12 +24,12 @@ body{
     .container{
         width: 100vw !important;
         height:auto!important;
-        display: flex;
-        flex-direction: column;
+        display: block;
+        /* flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0!important;
-        padding: 0!important;
+        padding: 0!important; */
     }
     .firstColumn{
         width:100vw!important;
@@ -37,7 +37,10 @@ body{
         background-size: cover!important;
         display: flex!important;
         flex-direction: column-reverse!important;
+        justify-content: flex-start!important;
+        align-items: stretch!important;
         flex-wrap: wrap!important;
+        padding-top:50px;
     }
     .secondColumn{
         width: 100%!important;
@@ -49,19 +52,21 @@ body{
         margin-left: 0!important;
     }
     .frontCard{
-        width:85%!important;
+        width:80%!important;
         left:5%!important;
         margin-bottom:-70px!important;
         z-index: 2;
     }
     .backCard{
-        margin-bottom:-100px!important;
-        width:85%!important;
-        left:13%!important;
+        margin-bottom:-90px!important;
+        width:80%!important;
+        right:-10%!important;
         top: 0!important;
     }
     .cardNumber{
-        font-size: 20px!important;
+        font-size: 18px!important;
+        bottom: 45px!important;
+        left:20px!important;
     }
     .cardLogo{
         top:20px!important;
@@ -108,7 +113,7 @@ body{
     left:30%;
 }
 .backCard{
-    left:52%;
+    right:-52%;
 }
 .img-fluid{
     max-width: 100%!important;
