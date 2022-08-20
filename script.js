@@ -78,8 +78,11 @@ function validate(event){
         yearInput.value !== "" &&
         cvcInput.value !== ""
     ){ 
-        cardDetailsForm.classList.add("hide");
-        thankYouForm.classList.remove("hide");
+        cardForm.addEventListener("submit", (event) => {
+            cardDetailsForm.classList.add("hide");
+            thankYouForm.classList.remove("hide");
+            event.preventDefault();
+        })
         cardHolderName.value === "";
         cardNumberInput.value === "";
         monthInput.value === "";

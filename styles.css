@@ -16,131 +16,11 @@ body{
     flex-direction: row;
     align-items: stretch;
 }
-@media only screen and (max-width:480px){
-    body{
-        margin: 0!important;
-        padding: 0!important;
-    }
-    .container-fluid{
-        width: 100vw !important;
-        height:auto!important;
-        display: block!important;
-    }
-    .firstColumn{
-        width:100%!important;
-        height:auto!important;
-        background-size: cover!important;
-        display: flex!important;
-        flex-direction: column-reverse!important;
-        justify-content: flex-start!important;
-        align-items: stretch!important;
-        flex-wrap: wrap!important;
-        padding-top:50px;
-    }
-    .secondColumn{
-        width: 100%!important;
-        padding: 30px !important;
-    }
-    .cardDetailsForm{
-        width: 100%!important;
-        margin-top: 100px!important;
-        margin-left: 0!important;
-    }
-    .frontCard{
-        width:85%!important;
-        left:5%!important;
-        margin-bottom:-70px!important;
-        z-index: 2;
-    }
-    .backCard{
-        margin-bottom:-80px!important;
-        width:85%!important;
-        right:-0%!important;
-        top: 0!important;
-    }
-    .cardNumber{
-        font-size: 17px!important;
-        bottom: 45px!important;
-        left:20px!important;
-    }
-    .cardLogo{
-        top:15px!important;
-        left:15px!important;
-    }
-    .cardName{
-        bottom:15px!important;
-        left: 15px !important;
-        margin-bottom: 0!important;
-        font-size:13px!important;
-    }
-    .cardExpiry{
-        bottom: 15px !important;
-        right: 15px !important;
-        margin-bottom: 0!important;
-        font-size:13px!important
-    }
-    label{
-        font-size: 10px!important;
-        letter-spacing: 1px!important;
-    }
-    .cardDetailsForm .row .col .form-control{
-        padding:7px!important;
-        border-radius: 5px;
-        font-family: 'Space Grotesk', sans-serif;
-        font-size: 15px!important;
-    }
-    .thankYou{
-        width: 100%!important;
-        margin-left:0!important;
-        margin-top:100px;
-    }
-}
-@media screen and (max-width:960px) and (min-width:481px){
-    .container-fluid{
-        width: 100vw!important;
-        height:auto!important;
-        display: block!important;
-    }
-    
-    .firstColumn{
-        width:100%!important;
-        height:auto!important;
-        background-size: cover!important;
-        display: flex!important;
-        flex-direction: column-reverse!important;
-        justify-content: flex-start!important;
-        align-items: stretch!important;
-        flex-wrap: wrap!important;
-        padding-top:50px;
-    }
-    .secondColumn{
-        width: 60%!important;
-        padding: 30px !important;
-        margin:0 auto;
-    }
-    .cardDetailsForm{
-        width: 100%!important;
-        margin-top: 100px!important;
-        margin-left: 0!important;
-    }
-    .frontCard{
-        width:85%!important;
-        left:15%!important;
-        margin-bottom:-70px!important;
-        z-index: 2;
-    }
-    .backCard{
-        margin-bottom:-120px!important;
-        width:85%!important;
-        right:-30%!important;
-        top: 0!important;
-    }
-}
-
 .firstColumn{
     width:35%;
     position:relative;
     background-image: url('images/bg-main-desktop.png');
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,6 +47,11 @@ body{
 }
 .backCard{
     right:-52%;
+}
+.frontCardDetails, .backCardDetails{
+    position: relative;
+    max-width:447px; 
+    max-height:245px;
 }
 .img-fluid{
     max-width: 100%!important;
@@ -294,6 +179,135 @@ h3{
 .hide{
     display:none;
 }
-.frontCardDetails, .backCardDetails{
-    position: relative;
+
+@media only screen and (max-width:480px){
+    body{
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .container-fluid{
+        width: 100vw!important;
+        height:auto!important;
+        display: block!important;
+    }
+    .firstColumn{
+        width:100%!important;
+        height:auto!important;
+        background-size: cover!important;
+        display: flex!important;
+        flex-direction: column-reverse!important;
+        justify-content: flex-start!important;
+        align-items: stretch!important;
+        flex-wrap: wrap!important;
+        padding-top:50px;
+    }
+    .secondColumn{
+        width: 100%!important;
+        padding: 30px !important;
+    }
+    .cardDetailsForm{
+        width: 100%!important;
+        margin-top: 100px!important;
+        margin-left: 0!important;
+    }
+    .frontCard{
+        width:80%!important;
+        left:5%!important;
+        margin-bottom:-70px!important;
+        z-index: 2;
+    }
+    .backCard{
+        margin-bottom:-80px!important;
+        width:80%!important;
+        right:-10%!important;
+        top: 0!important;
+    }
+    .frontCardDetails{
+        width:100%!important;
+    }
+    .backCardDetails{
+        width:100%!important;
+    }
+    .cardNumber{
+        font-size: 17px!important;
+        bottom: 45px!important;
+        left:20px!important;
+    }
+    .cardLogo{
+        top:15px!important;
+        left:15px!important;
+    }
+    .cardName{
+        bottom:15px!important;
+        left: 15px !important;
+        margin-bottom: 0!important;
+        font-size:13px!important;
+    }
+    .cardExpiry{
+        bottom: 15px !important;
+        right: 15px !important;
+        margin-bottom: 0!important;
+        font-size:13px!important
+    }
+    label{
+        font-size: 10px!important;
+        letter-spacing: 1px!important;
+    }
+    .cardDetailsForm .row .col .form-control{
+        padding:7px!important;
+        border-radius: 5px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 15px!important;
+    }
+    .thankYou{
+        width: 100%!important;
+        margin-left:0!important;
+        margin-top:100px;
+    }
+}
+@media screen and (max-width:960px) and (min-width:481px){
+    .container-fluid{
+        width: 100%!important;
+        height:auto!important;
+        display: block!important;
+    }
+    
+    .firstColumn{
+        width:100%!important;
+        height:auto!important;
+        background-size: cover!important;
+        display: flex!important;
+        flex-direction: column-reverse!important;
+        justify-content: flex-start!important;
+        align-items: stretch!important;
+        flex-wrap: wrap!important;
+        padding-top:50px;
+    }
+    .secondColumn{
+        width: 60%!important;
+        padding: 30px !important;
+        margin:0 auto;
+    }
+    .cardDetailsForm{
+        width: 100%!important;
+        margin-top: 100px!important;
+        margin-left: 0!important;
+    }
+    .frontCard{
+        width:85%!important;
+        left:15%!important;
+        margin-bottom:-70px!important;
+        z-index: 2;
+    }
+    .backCard{
+        margin-bottom:-120px!important;
+        width:85%!important;
+        right:-30%!important;
+        top: 0!important;
+    }
+    .thankYou{
+        width: 100%!important;
+        margin-left:0!important;
+        margin-top:100px;
+    }
 }
