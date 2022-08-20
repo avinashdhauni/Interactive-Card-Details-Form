@@ -49,14 +49,14 @@ body{
         margin-left: 0!important;
     }
     .frontCard{
-        width:75%!important;
+        width:85%!important;
         left:5%!important;
         margin-bottom:-70px!important;
         z-index: 2;
     }
     .backCard{
         margin-bottom:-100px!important;
-        width:75%!important;
+        width:85%!important;
         left:13%!important;
         top: 0!important;
     }
