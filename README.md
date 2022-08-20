@@ -1,4 +1,4 @@
-<h1>Frontend Mentor - Interactive card details form</h1>
+<h1>Interactive card details form- Frontend Mentor Challenge</h1>
 
 
 Your users should be able to: 
