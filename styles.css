@@ -48,16 +48,34 @@ body{
         margin-top: 100px!important;
         margin-left: 0!important;
     }
-  
     .frontCard{
-        width:90%!important;
-        left:0%!important;
-        top: 0!important;
+        width:75%!important;
+        left:5%!important;
+        margin-bottom:-70px!important;
+        z-index: 2;
     }
     .backCard{
-        width:80%!important;
-        left:0%!important;
+        margin-bottom:-100px!important;
+        width:75%!important;
+        left:13%!important;
         top: 0!important;
+    }
+    .cardNumber{
+        font-size: 20px!important;
+    }
+    .cardLogo{
+        top:20px!important;
+        left:20px!important;
+    }
+    .cardName{
+        bottom:20px!important;
+        left: 20px !important;
+        margin-bottom: 0!important;
+    }
+    .cardExpiry{
+        bottom: 20px !important;
+        right: 20px !important;
+        margin-bottom: 0!important;
     }
 }
 
@@ -68,6 +86,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap!important;
     overflow: visible!important;
     z-index: 99;
@@ -129,8 +148,8 @@ body{
     letter-spacing: 1px;
 }
 .cardCVV{
-    top:109px;
-    right:65px;
+    top:45%;
+    right:15%;
     font-size:15px;
     letter-spacing: 1px;
 }
