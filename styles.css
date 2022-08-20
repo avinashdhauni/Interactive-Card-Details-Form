@@ -8,7 +8,7 @@ body{
 *{
     box-sizing: border-box;
 }
-.container{
+.container-fluid{
     margin: 0!important;
     padding: 0!important;
     height:100%;
@@ -16,23 +16,18 @@ body{
     flex-direction: row;
     align-items: stretch;
 }
-@media only screen and (max-width:960px){
+@media only screen and (max-width:480px){
     body{
         margin: 0!important;
         padding: 0!important;
     }
-    .container{
+    .container-fluid{
         width: 100vw !important;
         height:auto!important;
-        display: block;
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0!important;
-        padding: 0!important; */
+        display: block!important;
     }
     .firstColumn{
-        width:100vw!important;
+        width:100%!important;
         height:auto!important;
         background-size: cover!important;
         display: flex!important;
@@ -60,7 +55,7 @@ body{
     .backCard{
         margin-bottom:-80px!important;
         width:85%!important;
-        right:-11%!important;
+        right:-0%!important;
         top: 0!important;
     }
     .cardNumber{
@@ -98,6 +93,47 @@ body{
         width: 100%!important;
         margin-left:0!important;
         margin-top:100px;
+    }
+}
+@media screen and (max-width:960px) and (min-width:481px){
+    .container-fluid{
+        width: 100vw!important;
+        height:auto!important;
+        display: block!important;
+    }
+    
+    .firstColumn{
+        width:100%!important;
+        height:auto!important;
+        background-size: cover!important;
+        display: flex!important;
+        flex-direction: column-reverse!important;
+        justify-content: flex-start!important;
+        align-items: stretch!important;
+        flex-wrap: wrap!important;
+        padding-top:50px;
+    }
+    .secondColumn{
+        width: 60%!important;
+        padding: 30px !important;
+        margin:0 auto;
+    }
+    .cardDetailsForm{
+        width: 100%!important;
+        margin-top: 100px!important;
+        margin-left: 0!important;
+    }
+    .frontCard{
+        width:85%!important;
+        left:15%!important;
+        margin-bottom:-70px!important;
+        z-index: 2;
+    }
+    .backCard{
+        margin-bottom:-120px!important;
+        width:85%!important;
+        right:-30%!important;
+        top: 0!important;
     }
 }
 
@@ -170,8 +206,8 @@ body{
     letter-spacing: 1px;
 }
 .cardCVV{
-    top:44%;
-    right:15%;
+    top:45%;
+    right:55px;
     font-size:15px;
     letter-spacing: 1px;
 }
@@ -257,4 +293,7 @@ h3{
 
 .hide{
     display:none;
+}
+.frontCardDetails, .backCardDetails{
+    position: relative;
 }
